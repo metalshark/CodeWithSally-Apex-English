@@ -168,20 +168,21 @@ This week you will begin building a **mini Salesforce Project Management App** u
 Each project team must submit:
 
 1. **One GitHub Gist link** containing:
-   - Trigger code  
+   - Trigger(s) code  
    - Handler classes  
    - Test classes  
    - Test data factory  
 
 2. **Screenshots**:
-   - Running tests  
+   - Running tests (Screen shots from the testing scenarios you will run to test your triggers) 
    - Code coverage  
-   - Passing results  
+   - Test Classes Passing results  
 
 3. **Status update messages**  
    - Post updates only in **your team’s Slack channel**, not privately  
    - One consolidated update per team
 
+4. Status of who did what from the team on the task. 
 ---
 
 # 📝 Notes for Phase 1
