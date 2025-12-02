@@ -129,13 +129,16 @@ This week you will begin building a **mini Salesforce Project Management App** u
 ---
 
 ## ⭐ **3. Trigger on Project_Task__c**
-   a. Ensures **Due_Date__c** is in the future 
+   1. Ensures **Due_Date__c** is in the future 
          •	Applies when inserting a new record
          •	Applies when a user updates an existing record
          •	Block the action if the date is Today or in the past  
-   b. Automatically sets **Status__c = 'Completed'** if **isCompleted__c** is set to true during update
-   c. Prevent lowering priority: If Priority__c was previously 'High', users cannot change it to Medium or Low.
-   d. Prevent setting isCompleted__c = true when inserting new Task
+		 
+   2. Automatically sets **Status__c = 'Completed'** if **isCompleted__c** is set to true during update
+   
+   3. Prevent lowering priority: If Priority__c was previously 'High', users cannot change it to Medium or Low.
+   
+   4. Prevent setting isCompleted__c = true when inserting new Task
 
 ---
 
