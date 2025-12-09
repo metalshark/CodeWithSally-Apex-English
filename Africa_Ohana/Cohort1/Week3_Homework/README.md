@@ -129,22 +129,25 @@ This week you will begin building a **mini Salesforce Project Management App** u
 ---
 
 ## ⭐ **3. Trigger on Project_Task__c**
-   a. Ensures **Due_Date__c** is in the future 
-      	•	Applies when inserting a new record
-         •	Applies when a user updates an existing record
-         •	Block the action if the date is Today or in the past  
-   b. Automatically sets **Status__c = 'Completed'** if **isCompleted__c** is set to true during update
-   c. Prevent lowering priority: If Priority__c was previously 'High', users cannot change it to Medium or Low.
-   d. Prevent setting isCompleted__c = true when inserting new Task
+   1. Ensures **Due_Date__c** is in the future 
+         - 	Applies when inserting a new record
+         -	Applies when a user updates an existing record
+         -	Block the action if the date is Today or in the past  
+		 
+   2. Automatically sets **Status__c = 'Completed'** if **isCompleted__c** is set to true during update
+   
+   3. Prevent lowering priority: If Priority__c was previously 'High', users cannot change it to Medium or Low.
+   
+   4. Prevent setting isCompleted__c = true when inserting new Task
 
 ---
 
 ## ⭐ **4. Trigger on Project__c**
-   a. For every new Project__c record, automatically create one Project_Task__c child record: 
-      - Name: “Kickoff Task”
-	   - Due_Date__c = Project.Start_Date__c + 2 days 
-	   - Priority__c = Medium
-	   - Status__c = Not Started
+1. For every new Project__c record, automatically create one Project_Task__c child record: 
+	- Name: “Kickoff Task”
+	- Due_Date__c = Project.Start_Date__c + 2 days 
+	- Priority__c = Medium
+	- Status__c = Not Started
 
 ---
 ## ⭐ **5. Unit Testing Requirements**
@@ -165,20 +168,21 @@ This week you will begin building a **mini Salesforce Project Management App** u
 Each project team must submit:
 
 1. **One GitHub Gist link** containing:
-   - Trigger code  
+   - Trigger(s) code  
    - Handler classes  
    - Test classes  
    - Test data factory  
 
 2. **Screenshots**:
-   - Running tests  
+   - Running tests (Screen shots from the testing scenarios you will run to test your triggers) 
    - Code coverage  
-   - Passing results  
+   - Test Classes Passing results  
 
 3. **Status update messages**  
    - Post updates only in **your team’s Slack channel**, not privately  
    - One consolidated update per team
 
+4. Status of who did what from the team on the task. 
 ---
 
 # 📝 Notes for Phase 1
